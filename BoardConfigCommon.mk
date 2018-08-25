@@ -219,6 +219,8 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
